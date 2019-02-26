@@ -1,0 +1,35 @@
+{
+  "name": "lyrics-animation-sample",
+  "version": "0.1.0",
+  "description": "lyrics animation sample",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "rm -rf ./dist && parcel build src/index.html --public-url .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "workflow:setting": "sh setting.sh",
+    "workflow:deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "animejs": "^3.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "parcel-bundler": "^1.11.0",
+    "typescript": "^3.3.3333"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NaoyukiMiyazaki/lyrics-animation-sample.git"
+  },
+  "keywords": [
+    "animation",
+    "sample",
+    "animejs"
+  ],
+  "author": "NaoyukiMiyazaki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NaoyukiMiyazaki/lyrics-animation-sample/issues"
+  },
+  "homepage": "https://github.com/NaoyukiMiyazaki/lyrics-animation-sample#readme"
+}

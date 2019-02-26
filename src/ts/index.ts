@@ -1,6 +1,6 @@
 import LyricsAnimation, { LyricsParams, Option } from './lyrics-animation';
 
-console.log('hi')
+console.log('hello')
 
 const LYRICS: LyricsParams[] = [
   {

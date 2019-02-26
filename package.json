@@ -6,7 +6,8 @@
     "start": "parcel src/index.html --open",
     "build": "rm -rf ./dist && parcel build src/index.html --public-url .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "workflow:deploy": "npm run build && gh-pages -d dist -u NaoyukiMiyazaki <miyazaki@buddying.jp>"
+    "workflow:deploy": "npm run build && gh-pages -d dist -u \"NaoyukiMiyazaki <miyazaki@buddying.jp>\"",
+    "debug": "NODE_DEBUG=gh-pages npm run workflow:deploy"
   },
   "dependencies": {
     "animejs": "^3.0.1"

@@ -8,15 +8,9 @@ action "Filters" {
   args = "ref refs/heads/master"
 }
 
-action "Setting" {
-  uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
-  needs = ["Filters"]
-  args = "run workflow:setting"
-}
-
 action "Install" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
-  needs = ["Setting"]
+  needs = ["Filters"]
   args = "install"
 }
 
